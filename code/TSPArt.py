@@ -151,7 +151,7 @@ def buildOutputPaths(image_path: str, target: int) -> Tuple[str, str, str]:
     stem = p.stem
     preview = str(folder / f"{stem}_pv.png")
     tsp = str(folder / f"{stem}_{target}.tsp")
-    tour = str(folder / f"{stem}_{target}.opt.tour")
+    tour = str(folder / f"{stem}_{target}.nn_clean.tour")
     return preview, tsp, tour
 
 def flipY(points, height):
